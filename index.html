@@ -951,7 +951,27 @@
   <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+<script src="./assets/js/script.js"></script>
+<script>
+  // Fix untuk elemen yang mungkin null
+  document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('[data-nav-link]');
+    const pages = document.querySelectorAll('[data-page]');
+    
+    navLinks.forEach(btn => {
+      btn.addEventListener('click', function() {
+        const target = this.textContent.trim().toLowerCase();
+        pages.forEach(p => p.classList.remove('active'));
+        navLinks.forEach(l => l.classList.remove('active'));
+        const targetPage = document.querySelector('[data-page="' + target + '"]');
+        if (targetPage) {
+          targetPage.classList.add('active');
+          this.classList.add('active');
+        }
+      });
+    });
+  });
+</script>
 
   <!--
     - ionicon link
