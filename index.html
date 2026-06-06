@@ -383,7 +383,7 @@
             </div>
             <img src="./assets/images/SuryaHub.png" alt="SuryaHub" loading="lazy">
           </figure>
-          <h3 class="project-title">Customer & Sales Analysis (SuryaHub)</h3>
+          <h3 class="project-title">SuryaHub: Customer Behavior & Sales Analysis</h3>
           <p class="project-category">SQL • BigQuery • Looker Studio • Data Visualization</p>
         </a>
       </li>
@@ -424,7 +424,7 @@
   <div id="modal1" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:9999; overflow-y:auto;">
     <div style="background:#1e1e1e; max-width:600px; margin:40px auto; border-radius:16px; padding:30px; position:relative;">
       <button onclick="closeModal('modal1')" style="position:absolute; top:15px; right:15px; background:none; border:none; color:white; font-size:24px; cursor:pointer;">✕</button>
-      <h2 style="color:white; margin-bottom:20px;">Customer & Sales Analysis (SuryaHub)</h2>
+      <h2 style="color:white; margin-bottom:20px;">SuryaHub: Customer Behavior & Sales Analysis</h2>
       <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:20px;">
         <span style="border:1px solid hsl(45,100%,72%); border-radius:20px; padding:4px 12px; font-size:12px; color:hsl(45,100%,72%);">SQL</span>
         <span style="border:1px solid hsl(45,100%,72%); border-radius:20px; padding:4px 12px; font-size:12px; color:hsl(45,100%,72%);">BigQuery</span>
@@ -433,21 +433,34 @@
       </div>
       <h4 style="color:hsl(45,100%,72%); margin-bottom:8px;">📋 Background</h4>
       <p style="color:#ccc; margin-bottom:20px; line-height:1.7;">
-        SuryaHub is a fast-growing e-commerce platform offering products across
-        multiple categories, serving thousands of active customers through its digital storefront.
-        They want to evaluate their digital campaigns to support SuryaHub’s customer loyalty and personalization strategies.
+        SuryaHub is a fast-growing e-commerce platform offering products across multiple categories, including food, household supplies, electronics, and luxury goods. 
+        This project focuses on analyzing customer transaction data to help the marketing team gain clear visibility into purchasing patterns, loyalty program effectiveness, 
+        and campaign performance — enabling data-driven decisions without solely relying on increased marketing budget.
       </p>
-      <h4 style="color:hsl(45,100%,72%); margin-bottom:8px;">⚙️ Scope of Work</h4>
+      <h4 style="color:hsl(45,100%,72%); margin-bottom:8px;">📌 Scope of Work</h4>
       <ul style="color:#ccc; padding-left:20px; margin-bottom:20px; line-height:2; list-style-type:disc;">
-        <li>• Ekstraksi dan pembersihan data transaksi menggunakan SQL</li>
-        <li>• Analisis perilaku pelanggan dan tren pembelian</li>
-        <li>• Evaluasi efektivitas kampanye pemasaran digital</li>
-        <li>• Visualisasi insight menggunakan Looker Studio</li>
+        <li style="display:flex; gap:8px; margin-bottom:8px;"><span style="flex-shrink:0;">•</span><span>Analyzed customer transaction records using BigQuery SQL to uncover purchasing patterns and customer segments</span></li>
+        <li style="display:flex; gap:8px; margin-bottom:8px;"><span style="flex-shrink:0;">•</span><span>Queried gender distribution, top cities by volume, and top 10 highest-spending customers</span></li>
+        <li style="display:flex; gap:8px; margin-bottom:8px;"><span style="flex-shrink:0;">•</span><span>Evaluated loyalty program membership impact on purchase amount and frequency</span></li>
+        <li style="display:flex; gap:8px; margin-bottom:8px;"><span style="flex-shrink:0;">•</span><span>Analyzed purchase intent and channel performance to identify high-value customer segments</span></li>
+        <li style="display:flex; gap:8px; margin-bottom:8px;"><span style="flex-shrink:0;">•</span><span>Built an interactive Looker Studio dashboard to visualize demographics, geographic performance, and buying behavior</span></li>
       </ul>
+      <h4 style="color:hsl(45,100%,72%); margin-bottom:8px;">⚙️ Process</h4>
+      <p style="color:#ccc; margin-bottom:20px; line-height:1.7;">
+        Started by exploring the SuryaHub dataset in BigQuery, writing targeted SQL queries to answer key business questions 
+        around gender distribution, regional performance, loyalty membership, purchase intent, and channel behavior. 
+        Each query was designed to surface a specific insight for the marketing team. Findings were then connected to Looker Studio 
+        to build an interactive dashboard covering customer demographics (age and gender distribution), 
+        geographic sales performance across the top 5 cities, loyalty program effectiveness, purchase intent segmentation, 
+        and the impact of social media on purchase behavior across channels.
+      </p>
       <h4 style="color:hsl(45,100%,72%); margin-bottom:8px;">🎯 Results</h4>
       <ul style="color:#ccc; padding-left:20px; margin-bottom:25px; line-height:2;">
-        <li>• Identified key customer segments and purchase patterns</li>
-        <li>• Delivered actionable insights to support marketing strategy</li>
+        <li style="display:flex; gap:8px; margin-bottom:8px;"><span style="flex-shrink:0;">•</span><span>Identified female customers (265 transactions) as the primary demographic segment to prioritize in marketing campaigns</span></li>
+        <li style="display:flex; gap:8px; margin-bottom:8px;"><span style="flex-shrink:0;">•</span><span>Mapped Makassar as the highest-revenue city (Rp421.1M), providing geographic focus for regional promotions</span></li>
+        <li style="display:flex; gap:8px; margin-bottom:8px;"><span style="flex-shrink:0;">•</span><span>Revealed that non-loyalty members outspend members in both value and frequency, signaling the need for loyalty program restructuring</span></li>
+        <li style="display:flex; gap:8px; margin-bottom:8px;"><span style="flex-shrink:0;">•</span><span>Found planned buyers to be the most valuable segment by average spend, with impulsive buyers as a high-potential growth target</span></li>
+        <li style="display:flex; gap:8px; margin-bottom:8px;"><span style="flex-shrink:0;">•</span><span>Delivered actionable recommendations for SuryaHub's growth strategy</span></li>
       </ul>
       <a href="https://drive.google.com/file/d/1F74I7ET480r4A1bOOhSXGeqr5UY7Mvlq/view?usp=drive_link" target="_blank" style="display:inline-block; background:hsl(45,100%,72%); color:#1e1e1e; padding:10px 24px; border-radius:8px; font-weight:bold; text-decoration:none;">View Project →</a>
     </div>
@@ -466,7 +479,7 @@
       <p style="color:#ccc; margin-bottom:20px; line-height:1.7;">
         SuryaMart adalah perusahaan e-commerce multikategori yang menjual elektronik, pakaian, groceries, buku, hingga health supplements. Tim marketing ingin mengevaluasi hasil kampanye digital berdasarkan data perilaku konsumen untuk mengetahui profil pelanggan paling aktif dan kategori produk paling laris.
       </p>
-      <h4 style="color:hsl(45,100%,72%); margin-bottom:8px;">⚙️ Scope of Work</h4>
+      <h4 style="color:hsl(45,100%,72%); margin-bottom:8px;">📌 Scope of Work</h4>
       <ul style="color:#ccc; padding-left:20px; margin-bottom:20px; line-height:2; list-style-type:disc;">
         <li>• Pembersihan dan analisis data menggunakan Excel</li>
         <li>• Identifikasi profil pelanggan paling aktif</li>
@@ -474,6 +487,12 @@
         <li>• Evaluasi efektivitas diskon dan pengaruh sosial media</li>
         <li>• Visualisasi hasil analisis di Excel</li>
       </ul>
+      <h4 style="color:hsl(45,100%,72%); margin-bottom:8px;">⚙️ Process</h4>
+      <p style="color:#ccc; margin-bottom:20px; line-height:1.7;">
+        SuryaHub is a fast-growing e-commerce platform offering products across multiple categories, including food, household supplies, electronics, and luxury goods. 
+        This project focuses on analyzing customer transaction data to help the marketing team gain clear visibility into purchasing patterns, loyalty program effectiveness, 
+        and campaign performance — enabling data-driven decisions without solely relying on increased marketing budget.
+      </p>
       <h4 style="color:hsl(45,100%,72%); margin-bottom:8px;">🎯 Results</h4>
       <ul style="color:#ccc; padding-left:20px; margin-bottom:25px; line-height:2;">
         <li>• Identified top performing product categories</li>
@@ -501,7 +520,7 @@
         Kopi NangKau is a growing local coffee shop business that has collected daily transaction data from 2021 to 2023, covering a variety of beverage and food menu items.
         They want to optimize their business strategy, management needs deeper insights into best-selling products, sales trends, and future growth potential. 
       </p>
-      <h4 style="color:hsl(45,100%,72%); margin-bottom:8px;">⚙️ Scope of Work</h4>
+      <h4 style="color:hsl(45,100%,72%); margin-bottom:8px;">📌 Scope of Work</h4>
       <ul style="color:#ccc; padding-left:20px; margin-bottom:20px; line-height:2; list-style-type:disc;">
         <li style="display:flex; gap:8px; margin-bottom:8px;"><span style="flex-shrink:0;">•</span><span>Data Exploration: Understanding the dataset structure, checking data types, identifying missing values, duplicates, and basic statistics</span></li>
         <li style="display:flex; gap:8px; margin-bottom:8px;"><span style="flex-shrink:0;">•</span><span>Data Cleaning & Imputation: Removing duplicates, handling missing values, and ensuring price consistency across the 2021–2023 period</span></li>
@@ -509,6 +528,12 @@
         <li style="display:flex; gap:8px; margin-bottom:8px;"><span style="flex-shrink:0;">•</span><span>Group Analysis & Visualization: Aggregating data by product, year, and category to identify sales trends, best-selling items, and year-over-year growth</span></li>
         <li style="display:flex; gap:8px; margin-bottom:8px;"><span style="flex-shrink:0;">•</span><span>Findings recommendations for Kopi NangKau's growth strategy</span></li>
       </ul>
+      <h4 style="color:hsl(45,100%,72%); margin-bottom:8px;">⚙️ Process</h4>
+      <p style="color:#ccc; margin-bottom:20px; line-height:1.7;">
+        SuryaHub is a fast-growing e-commerce platform offering products across multiple categories, including food, household supplies, electronics, and luxury goods. 
+        This project focuses on analyzing customer transaction data to help the marketing team gain clear visibility into purchasing patterns, loyalty program effectiveness, 
+        and campaign performance — enabling data-driven decisions without solely relying on increased marketing budget.
+      </p>
       <h4 style="color:hsl(45,100%,72%); margin-bottom:8px;">🎯 Results</h4>
       <ul style="color:#ccc; padding-left:20px; margin-bottom:25px; line-height:2;">
         <li style="padding-left:15px; text-indent:-15px; margin-bottom:8px;">• Identified sales trends across 3 years</li>
